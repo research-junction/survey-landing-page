@@ -1,106 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Landing Page</title>
   <style>
-    /* Base layout */
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f7fb;   /* light, non-gloomy background */
-      color: #1a1a1a;              /* strong readable text */
-      line-height: 1.7;
-      font-size: 17px;
-    }
-    .wrapper {
-      max-width: 860px;
-      margin: 48px auto;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
       padding: 0 20px;
+      color: #333;
+      background-color: #fdf6e3;
     }
-
-    /* Headings & text */
     h1 {
-      text-align: center;
-      color: #0f3d68;              /* calm navy for title */
-      margin: 0 0 20px 0;
-      font-size: 30px;
-      line-height: 1.3;
-    }
-    p { margin: 0 0 14px 0; }
-
-    /* Card sections */
-    .section {
-      background: #ffffff;         /* clear white card */
-      border: 1px solid #e6eaf0;   /* subtle border for definition */
-      border-radius: 12px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
-      padding: 18px 20px;
-      margin-bottom: 20px;
-    }
-    .consent {
-      font-size: 15px;
-      color: #555;
-    }
-
-    /* Button */
-    .cta {
+      color: #0056b3;
       text-align: center;
     }
     a.button {
       display: inline-block;
-      padding: 12px 22px;
-      border-radius: 10px;
-      background: #0b66d6;         /* accessible blue */
-      color: #fff;
+      padding: 12px 24px;
+      margin: 20px 0;
+      background-color: #0056b3;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 0.2px;
-      min-height: 44px;            /* good tap target */
-      line-height: 20px;
-      transition: transform 0.05s ease-in, background-color 0.15s ease-in;
+      border-radius: 6px;
     }
-    a.button:hover { background: #094fa6; }
-    a.button:active { transform: scale(0.98); }
+    a.button:hover {
+      background-color: #003f7f;
+    }
+    .section {
+      margin-bottom: 25px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .consent {
+      font-size: 0.9em;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Welcome to Our Survey</h1>
 
-    <div class="section">
-      <p>
-        This survey explores personal experiences with <strong>[topic]</strong>.
-        It’s designed for thoughtful reflection, so please take your time.
-        Estimated time to complete: 20–30 minutes.
-      </p>
-    </div>
+  <h1>Welcome to Our Survey</h1>
 
-    <div class="section">
-      <p><strong>Important:</strong> We collect your email only so you can pause and return later.
-      Your email will <em>not</em> be linked to your answers and will remain confidential.
-      After your first submit, you can use the “Edit your response” link to continue.</p>
-    </div>
-
-    <div class="section">
-      <p>After your first submission, please <strong>copy or bookmark</strong> the “Edit your response” link on the confirmation page.
-      That link is how you resume later.</p>
-    </div>
-
-    <div class="section">
-      <p class="consent">
-        By clicking the button below, you acknowledge you’ve read these instructions and consent to participate.
-      </p>
-    </div>
-
-    <div class="section cta">
-      <a href="[INSERT GOOGLE FORM LINK HERE]" class="button">Start Survey</a>
-    </div>
+  <div class="section">
+    <p>This survey explores personal experiences with [topic]. It is designed to encourage thoughtful reflection, so please take your time. The survey may take approximately 20–30 minutes to complete.</p>
   </div>
+
+  <div class="section">
+    <p><strong>Important:</strong> This survey requires an email to allow you to pause and return later. Your email will <em>not</em> be linked to your answers and will remain confidential. You will receive a link to edit your responses after submission.</p>
+  </div>
+
+  <div class="section">
+    <p>After completing the survey for the first time, please <strong>copy or bookmark</strong> the “Edit your response” link provided on the confirmation page. This is the only way to resume your survey later.</p>
+  </div>
+
+  <div class="section">
+    <p class="consent">By clicking the button below, you acknowledge that you understand the instructions and consent to participate in this survey.</p>
+  </div>
+
+  <div class="section" style="text-align:center;">
+    <a href="[INSERT GOOGLE FORM LINK HERE]" class="button">Start Survey</a>
+  </div>
+
 </body>
 </html>
